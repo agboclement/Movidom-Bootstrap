@@ -1,0 +1,65 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "normalize";
+// @import "oscar";
+
+:root {
+    --bg-color: #000;
+    --primary-color: #fff;
+    --secondary-color: #ff5900;
+    --header-font: "Barlow", sans-serif;
+    --text-font: "Poppins", sans-serif;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --gray-color: #a8a8a8;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--text-font);
+    color: var(--primary-color);
+    letter-spacing: 0.02em;
+    overflow-x: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -10;
+
+    .bg-video {
+        width: 100%;
+        // min-height: 100%;
+    }
+}
+
+header {
+    height: 100vh;
+}
+nav:before {
+    content: "";
+    background: #000;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    z-index: -5;
+}
+
+.line {
+    border-left: 1px solid #fff;
+    padding: 0 50px;
+
+    p:first-child {
+        line-height: 0.75;
+    }
+}
+
+.banner-item {
+    position: relative;
+    top: 200px;
+}

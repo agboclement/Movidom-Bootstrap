@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> -->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/oscar.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <header>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-md navbar-light py-1">
+            <a href="#" class="navbar-brand"><img class="nav-link px-3" src="/image/Movidom_Crop.png" alt="MOVIDOM"
+                    width="150px"></a>
+            <button type="button" class="navbar-toggler bg-light" data-toggle="collapse"
+                data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse justify-content-even" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link text-light px-3" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light px-3" href="#">Stream/Buy</a></li>
+                    <li class="nav-item"><a class="nav-link text-light px-3" href="#">Coming Soon</a></li>
+                    <li class="nav-item"><a class="nav-link text-light px-3" href="#">Catalog</a></li>
+                    <li class="nav-item"><a class="nav-link text-light px-3" href="#">About</a></li>
+                </ul>
+                <form class="form-inline px-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <div class="input-group-append">
+                            <button type="button" class="btn"><i class="fas fa-search text-muted"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <!-- Background Video -->
+        <div class="video-container">
+            <video class="bg-video" src="/video/GoT-8 Official Trailer.mp4" autoplay muted loop></video>
+        </div>
+
+        <!-- Banner -->
+        <section class="container-fluid banner">
+            <div class="col-10 offset-2 text-white banner-item line">
+                <p class="px-0 my-0 poppins out-now">Out Now</p>
+                <h2 class="col-12 display-2 px-0 barlow">Game of Thrones</h2>
+                <p class="col-5 text-justify px-0 mb-5 poppins mv-summary">
+                    Began with the promise of an imminent threat on the world of men in
+                    a fictional medieval-fantasy continent called Westeros. In the
+                    opening scene, we see mysterious inhumane figures -- called White
+                    Walkers -- attack three men who are ranging in the far north of
+                    Westeros.
+                </p>
+                <a class="btn btn-outline-info px-5 py-2 mb-1 poppins" href="#">Stream/Buy</a>
+                <!-- Add a pseudo element here to add a vertical line! -->
+            </div>
+        </section>
+    </header>
+
+    <!-- Movie Releases -->
+    <section>
+        <div class="latest-movies">
+            <div class="row my-3 filters">
+                <div class="col-6 offset-2">
+                    <p>
+                        Latest Domestic Releases |
+                        <a href="/watch-all" class=" text-danger watch-all">Watch All</a>
+                    </p>
+                </div>
+                <div class="col-4 input-group">
+                    <div class="dropdown mx-2">
+                        <!-- All Genres -->
+                        <button class="btn btn-danger dropdown-toggle px-3" type="button" id="genres"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All Genres
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="genres">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Adventure</button>
+                            <button class="dropdown-item" type="button">Animation</button>
+                            <button class="dropdown-item" type="button">Comedy</button>
+                            <button class="dropdown-item" type="button">Documentary</button>
+                            <button class="dropdown-item" type="button">Drama</button>
+                            <button class="dropdown-item" type="button">Family</button>
+                            <button class="dropdown-item" type="button">Fantasy</button>
+                            <button class="dropdown-item" type="button">Horror</button>
+                            <button class="dropdown-item" type="button">Rom-Com</button>
+                            <button class="dropdown-item" type="button">Sci-Fi</button>
+                            <button class="dropdown-item" type="button">Thriller</>
+                        </div>
+                    </div>
+                    <!-- All Years -->
+                    <div class="dropdown mx-2">
+                        <button class="btn btn-danger dropdown-toggle px-3" type="button" id="years"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All Years
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="years">
+                            <button class="dropdown-item" type="button">2019</button>
+                            <button class="dropdown-item" type="button">2018</button>
+                            <button class="dropdown-item" type="button">2017</button>
+                            <button class="dropdown-item" type="button">2016</button>
+                            <button class="dropdown-item" type="button">2015</button>
+                            <button class="dropdown-item" type="button">2014</button>
+                            <button class="dropdown-item" type="button">2013</button>
+                            <button class="dropdown-item" type="button">2012</button>
+                            <button class="dropdown-item" type="button">2011</button>
+                            <button class="dropdown-item" type="button">90's</button>
+                            <button class="dropdown-item" type="button">80's</button>
+                            <button class="dropdown-item" type="button">Older</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid d-flex">
+                <figure class="effect-oscar">
+                    <img src="image/local/4th republic movie art.jpg" alt="4th Republic" />
+                    <figcaption>
+                        <h2>4th <span>Republic</span></h2>
+                        <p>'4th Republic' is a thrilling political procedural that chronicles Nigeria's political and
+                            electoral system.</p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-oscar">
+                    <img src="image/local/Alter date movie art.jpg" alt="Alter Date" />
+                    <figcaption>
+                        <h2>Alter <span>Date</span></h2>
+                        <p>The story follows the lives of some group of friends namely; Remi, Lillian and Timi.</p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-oscar">
+                    <img src="image/local/Jumbled movie art.jpg" alt="Jumbled" />
+                    <figcaption>
+                        <h2><br><span>Jumbled</span></h2>
+                        <p>The story of a young girl in her early 30's who keeps having her heart broken until she
+                            finally meets the “perfect” man.</p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-oscar">
+                    <img src="image/local/King of boys movie art.jpg" alt="king of Boys" />
+                    <figcaption>
+                        <h2>King of <span>Boys</span></h2>
+                        <p>The story of Alhaja Salami, a businesswoman and philanthropist turn politician with a
+                            checkered past.</p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-oscar">
+                    <img src="image/local/Knockout movie art.jpg" alt="Knockout" />
+                    <figcaption>
+                        <h2>The <span>Knockout</span></h2>
+                        <p>A comical occurrences that took over a community after the news about a boxing competition
+                            with a cash prize of One Billion Naira ($3 Million) broke out.</p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-oscar">
+                    <img src="img/10.jpg" alt="img10" />
+                    <figcaption>
+                        <h2>Warm <span>Oscar</span></h2>
+                        <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="domestic-art latest-slider">
+                <div class="domestic-art-items">
+                    <img src="/image/local/4th republic movie art.jpg" alt="4th republic" />
+                    <a href="movie/movie.html">
+                        <div class="overlay">
+                            <div class="quick-summary">
+                                '4th Republic' is a thrilling political procedural that
+                                chronicles Nigeria's political and electoral system in the
+                                last two decades.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="domestic-art-items">
+                    <img src="/image/local/Alter date movie art.jpg" alt="The Alter date" />
+                    <a href="movie/movie.html">
+                        <div class="overlay">
+                            <div class="quick-summary">
+                                The story follows the lives of some group of friends namely;
+                                Remi, Lillian and Timi.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="domestic-art-items">
+                    <img src="/image/local/Jumbled movie art.jpg" alt="Jumbled" />
+                    <a href="movie/movie.html">
+                        <div class="overlay">
+                            <div class="quick-summary">
+                                The story of a young girl in her early thirties who keeps
+                                having her heart broken until she finally meets the
+                                “perfect” man.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="domestic-art-items">
+                    <img src="/img/local/King of boys movie art.jpg" alt="King of boys" />
+                    <a href="movie/movie.html">
+                        <div class="overlay">
+                            <div class="quick-summary">
+                                "King of Boys" follows the story of Alhaja Eniola Salami, a
+                                businesswoman and philanthropist with a checkered past and a
+                                promising political future.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="domestic-art-items">
+                    <img src="/img/local//Knockout movie art.jpg" alt="Knockout" />
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="quick-summary">
+                                The plot of 'Knockout' tells the story of comical
+                                occurrences that took over a community after the news about
+                                a boxing competition with a cash prize of One Billion Naira
+                                ($3 Million) broke out.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="domestic-art-items">
+                    <img src="/img/local/Lion Heart movie art.jpg" alt="Lionheart" />
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="quick-summary">
+                                In order to save her father's ailing bus company, competent
+                                but perennially overlooked Adaeze must find a way to work
+                                alongside feckless uncle.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="domestic-art-items">
+                    <img src="/img/local/Nimbe movie art.jpg" alt="Nimbe" />
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="quick-summary">
+                                Nimbe is a story addressing the issues associated with drug
+                                abuse, some of the causes, how to identify and avoid such.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="domestic-art-items">
+                    <img src="/img/local/Odaju movie art.png" alt="Odaju" />
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="quick-summary">
+                                A selfish young man puts his wife up for sale for the love
+                                of money not knowing he is gradually pushing her to a place
+                                of happiness.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="domestic-art-items">
+                    <img src="/img/local/Yardie movie art.jpg" alt="Yardie" />
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="quick-summary">
+                                Recently reeling from his brother’s death in a shooting when
+                                he was a child, Dennis Campbell, aka “D”, is hired by
+                                Nigerian crimelord and reggae producer King Fox to deliver a
+                                package of cocaine to British gangster Rico.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div> -->
+        <div class="row my-3 filters">
+            <div class="col-6 offset-2">
+                <p>
+                    Latest Foreign Releases |
+                    <a href="/watch-all" class=" text-danger watch-all">Watch All</a>
+                </p>
+            </div>
+            <div class="col-4 input-group">
+                <div class="dropdown mx-2">
+                    <!-- All Genres -->
+                    <button class="btn btn-danger dropdown-toggle px-3" type="button" id="genres" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        All Genres
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="genres">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Adventure</button>
+                        <button class="dropdown-item" type="button">Animation</button>
+                        <button class="dropdown-item" type="button">Comedy</button>
+                        <button class="dropdown-item" type="button">Documentary</button>
+                        <button class="dropdown-item" type="button">Drama</button>
+                        <button class="dropdown-item" type="button">Family</button>
+                        <button class="dropdown-item" type="button">Fantasy</button>
+                        <button class="dropdown-item" type="button">Horror</button>
+                        <button class="dropdown-item" type="button">Rom-Com</button>
+                        <button class="dropdown-item" type="button">Sci-Fi</button>
+                        <button class="dropdown-item" type="button">Thriller</>
+                    </div>
+                </div>
+                <!-- All Years -->
+                <div class="dropdown mx-2">
+                    <button class="btn btn-danger dropdown-toggle px-3" type="button" id="years" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        All Years
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="years">
+                        <button class="dropdown-item" type="button">2019</button>
+                        <button class="dropdown-item" type="button">2018</button>
+                        <button class="dropdown-item" type="button">2017</button>
+                        <button class="dropdown-item" type="button">2016</button>
+                        <button class="dropdown-item" type="button">2015</button>
+                        <button class="dropdown-item" type="button">2014</button>
+                        <button class="dropdown-item" type="button">2013</button>
+                        <button class="dropdown-item" type="button">2012</button>
+                        <button class="dropdown-item" type="button">2011</button>
+                        <button class="dropdown-item" type="button">90's</button>
+                        <button class="dropdown-item" type="button">80's</button>
+                        <button class="dropdown-item" type="button">Older</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid d-flex">
+            <figure class="effect-oscar">
+                <img src="image/foreign/Amar movie art.jpg" alt="Amar" />
+                <figcaption>
+                    <h2><span>Amar</span></h2>
+                    <p>'4th Republic' is a thrilling political procedural that chronicles Nigeria's political and
+                        electoral system.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-oscar">
+                <img src="image/foreign/Avengers movie art.png" alt="Avengers" />
+                <figcaption>
+                    <h2><span>Avengers</span></h2>
+                    <p>The story follows the lives of some group of friends namely; Remi, Lillian and Timi.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-oscar">
+                <img src="image/foreign/Beyonce homecoming movie art.jpg" alt="Beyonce Homecoming" />
+                <figcaption>
+                    <h2>Home<br><span>coming</span></h2>
+                    <p>The story of a young girl in her early 30's who keeps having her heart broken until she
+                        finally meets the “perfect” man.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-oscar">
+                <img src="image/foreign/Captain marvel movie art.jpg" alt="Captain Marvel" />
+                <figcaption>
+                    <h2>Captain<br /><span>Marvel</span></h2>
+                    <p>The story of Alhaja Salami, a businesswoman and philanthropist turn politician with a
+                        checkered past.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-oscar">
+                <img src="image/local/Knockout movie art.jpg" alt="Knockout" />
+                <figcaption>
+                    <h2>The <span>Knockout</span></h2>
+                    <p>A comical occurrences that took over a community after the news about a boxing competition
+                        with a cash prize of One Billion Naira ($3 Million) broke out.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-oscar">
+                <img src="img/10.jpg" alt="img10" />
+                <figcaption>
+                    <h2>Warm <span>Oscar</span></h2>
+                    <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="foreign-art latest-slider">
+            <div class="foreign-art-items">
+                <img src="/img/foreign/Amar movie art.jpg" alt="Amar" />
+                <a href="movie/movie.html">
+                    <div class="overlay">
+                        <div class="quick-summary">
+                            A young couple experience the intensity and fragility of
+                            first love, as life events tarnish their idealised notions
+                            of romance.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="foreign-art-items">
+                <img src="/img/foreign/Avengers movie art.png" alt="Avengers" />
+                <a href="movie/movie.html">
+                    <div class="overlay">
+                        <div class="quick-summary">
+                            The Avengers must figure out a way to bring back their
+                            vanquished allies for an epic showdown with Thanos.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="foreign-art-items">
+                <img src="/img/foreign/Beyonce homecoming movie art.jpg" alt="Beyonce's Homecoming" />
+                <a href="movie/movie.html">
+                    <div class="overlay">
+                        <div class="quick-summary">
+                            Much of the magic that makes the experience of merely
+                            listening to Homecoming so vivid is in Beyoncé's voice.
+                            Doing some of her most ambitious live choreography for two
+                            hours in the desert, delivering the best vocal performance
+                            of her career.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="foreign-art-items">
+                <img src="/img/foreign/Captain marvel movie art.jpg" alt="Captain Marvel" />
+                <a href="movie/movie.html">
+                    <div class="overlay">
+                        <div class="quick-summary">
+                            With help from Nick Fury, Captain Marvel tries to uncover
+                            the secrets of her past while harnessing her special
+                            superpowers to end the war with the evil Skrulls.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="foreign-art-items">
+                <img src="/img/foreign/Cold pursuit movie art.jpg" alt="Cold pursuit" />
+                <a href="#">
+                    <div class="overlay">
+                        <div class="quick-summary">
+                            Transformed from upstanding citizen to coldblooded
+                            vigilante, Coxman unwittingly sets off a chain events that
+                            includes a kidnapping, a series of deadly misunderstandings
+                            and a turf war between Viking and a rival boss.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="foreign-art-items">
+                <img src="/img/foreign/GOT movie art.jpg" alt="Game of Thrones" />
+                <a href="#">
+                    <div class="overlay">
+                        <div class="quick-summary">
+                            Mysterious inhumane figures called White Walkers attack the
+                            world of men in a fictional medieval-fantasy continent
+                            called Westeros.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="foreign-art-items">
+                <img src="/img/foreign/Missing link movie art.jpg" alt="Missing link" />
+                <a href="#">
+                    <div class="overlay">
+                        <div class="quick-summary">
+                            Tired of living a solitary life in the Pacific Northwest,
+                            Mr. Link recruits fearless explorer Sir Lionel Frost
+                            (Jackman) to guide him on a journey to find his long-lost
+                            relatives in the fabled valley of Shangri-La.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="foreign-art-items">
+                <img src="/img/foreign/Shazam movie art.jpg" alt="Shazam" />
+                <a href="#">
+                    <div class="overlay">
+                        <div class="quick-summary">
+                            Shazam revels in the new version of himself by doing what
+                            any other teen would do -- have fun while testing out his
+                            newfound powers.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="foreign-art-items">
+                <img src="/img/foreign/Us movie art.jpg" alt="Us" />
+                <a href="#">
+                    <div class="overlay">
+                        <div class="quick-summary">
+                            Accompanied by her husband, son and daughter, Adelaide
+                            Wilson returns to the beachfront home where she grew up as a
+                            child.
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div> -->
+        </div>
+    </section>
+
+    <!-- Promo Section -->
+    <section class="col-11 mx-auto promo">
+        <div class="row mx-auto watch relative">
+            <div class="col-6 my-auto">
+                <div class="offset-1 watch-content line">
+                    <h4 class="col-12 pl-0 display-4 barlow">Watch Everywhere.</h4>
+                    <p class="col-8 pl-0 poppins">
+                        Watch unlimited Movies and TV shows on your Phone, Tablet, Laptop,
+                        and TV without paying more.
+                    </p>
+                    <a class="btn btn-outline-danger mb-1 poppins" href="#">Watch free for 30 days</a>
+                </div>
+            </div>
+            <div class="col-6 devices">
+                <img src="image/devices-component.png" alt="Device" class="promo-img" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 tv">
+                <img src="image/tv-component.png" alt="TV" class="promo-img" />
+            </div>
+            <div class="col-6 m-auto enjoy relative">
+                <div class="offset-1 enjoy-content line">
+                    <h4 class="col-12 display-4 pl-0 barlow">Enjoy on your TV.</h4>
+                    <p class="col-8 pl-0 poppins">
+                        Watch on Smart TV, Playstation, Xbox, Chromecast, Apple TV,
+                        Blu-ray players, and more.
+                    </p>
+                    <a class="btn btn-outline-danger mb-1 poppins" href="#">Watch free for 30 days</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Carousel -->
+    <section class="coming-soon">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="/image/coming soon/Bond 25 image art.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Spiderman Home Coming</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi alias laborum tempore ex
+                            nemo autem aut culpa sequi nam dolorem.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/image/coming soon/Pirates-Of-The-Caribbean-6-Reboot-No-Johnny.jpg"
+                        alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pirates of the Caribbean 6</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, repudiandae iste
+                            molestias reprehenderit aspernatur odio! Facilis quibusdam excepturi laborum voluptas.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="image/coming soon/wp2631015-james-bond-hd-wallpaper.jpg"
+                        alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bond 25</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nemo esse a inventore
+                            iure facere quam nulla asperiores sequi repudiandae.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <div>
+        <div id="boxgallery" class="boxgallery" data-effect="effect-1">
+            <div class="panel"><img src="img/1.jpg" alt="Image 1" /></div>
+            <div class="panel"><img src="img/2.jpg" alt="Image 2" /></div>
+            <div class="panel"><img src="img/3.jpg" alt="Image 3" /></div>
+            <div class="panel"><img src="img/4.jpg" alt="Image 4" /></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="see-it line">
+            <p class="poppins out-now">Movidom Newsletter</p>
+            <h2 class="barlow">
+                See it First
+            </h2>
+
+            <form class="newsletter">
+                <input type="text" class="newsletter-item" placeholder="Enter your Email here*" />
+                <a class="btn-sub" href="#" type="button">Subscribe</a>
+            </form>
+        </div>
+        <div class="copy-right">
+            &copy; 2019 Movidom. | <a href="/contact/contact.html">Contact Us</a> | Proudly created by SGA-0.5 Group
+            4.
+            <i class="fab fa-instagram fa-1x"></i>
+            <i class="fab fa-youtube fa-1x"></i>
+            <i class="fab fa-twitter fa-1x"></i>
+            <i class="fab fa-facebook-f fa-1x"></i>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
